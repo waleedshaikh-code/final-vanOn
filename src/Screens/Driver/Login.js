@@ -38,11 +38,11 @@ const Login = ({ navigation }) => {
     console.log(email, password);
 
     try {
-      const response = await axios.post('http://192.168.0.114:2000/driver', {
+      const response = await axios.post('http://10.133.138.68:2000/driver', {
         email,
         password,
       });
-      await AsyncStorage.setItem('user', JSON.stringify(email));
+      await AsyncStorage.setItem('driver', JSON.stringify(email));
       ToastAndroid.show('Login Successfully!', ToastAndroid.SHORT);
       navigation.navigate("DriverMap");
    

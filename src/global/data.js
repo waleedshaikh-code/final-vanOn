@@ -1,17 +1,17 @@
 export const filterData = [ {name:"Ride",image: require('../../assets/ride.png'), id:"0"},
-                            {name:"Food",image:require("../../assets/food.png"),id:"1"},
-                            {name:"Package",image:require("../../assets/package.png"),id:"2"},
-                            {name:"Reserve",image:require("../../assets/reserve.png"),id:"3"}
+                            {name:"With",image:require("../../assets/ride.png"),id:"1"},
+                            {name:"Van",image:require("../../assets/ride.png"),id:"2"},
+                            {name:"On",image:require("../../assets/ride.png"),id:"3"}
                           
                            ];
 
 
 export const rideData =[
-    {street:"32 Olivia Rd",area:"Klipfontein 83-Ir,Boksburg",id:"0"},
-    {street:"Hughes Industrial Park",area:"Hughes,Boksburg",id:"1"},
-    {street:"32 Olivia Road",area:" East Rand,Ekurhuleni,Gauteng,1459",id:"2"},
-    {street:"Total Boksburg",area:"35 Atlas Rd,Anderbolt,Boksburg",id:"3"},
-    {street:"179 8th Ave",area:"Bezuidenhout Valley,Johannesburg",id:"4"},
+    {street:"Bahria University Karachi",area:"13 National Stadium Rd, Karsaz Faisal Cantonment, Karachi, Karachi City, Sindh",id:"0"},
+    {street:"Al-Quddus Apartment",area:"Gulshan e Iqbal Block 13 C",id:"1"},
+    {street:"Bahria University Islamabad",area:"13 National Stadium Rd, Karsaz Faisal Cantonment, Karachi, Karachi City, Sindh",id:"2"},
+    {street:"High Court Flats",area:"Numaish Chworangi",id:"3"},
+    {street:"Bahria University",area:"13 National Stadium Rd, Karsaz Faisal Cantonment, Karachi, Karachi City, Sindh",id:"4"},
 ];
 
 export const carTypeData =[

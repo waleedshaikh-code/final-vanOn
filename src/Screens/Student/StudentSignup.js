@@ -48,7 +48,7 @@ import {
           ToastAndroid.show('Please fill all the fields!', ToastAndroid.SHORT);
         }
         else{
-        axios.post("http://192.168.0.114:2000/createStudent", {
+        axios.post("http://192.168.4.118:2000/createStudent", {
           email,
           password,
           name,

@@ -5,13 +5,13 @@ import { Button } from 'react-native-elements';
 import { colors, parameters } from "../../global/styles";
 
 
-const DriverMap = ({navigation}) => {
+const StudentProfile = ({navigation}) => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
     const getUser = async () => {
       try {
-        const jsonValue = await AsyncStorage.getItem('driver')
+        const jsonValue = await AsyncStorage.getItem('student')
         setUser(jsonValue)
       } catch(e) {
       }
@@ -25,8 +25,8 @@ const DriverMap = ({navigation}) => {
 
   const handleLogout = async () => {
     try {
-      await AsyncStorage.removeItem('driver')
-      navigation.navigate("Login");
+      await AsyncStorage.removeItem('student')
+      navigation.navigate("StudentLogin");
     } catch(e) {
     }
   }
@@ -38,7 +38,7 @@ const DriverMap = ({navigation}) => {
         style={styles.profileImage}
       />
       <Text style={styles.name}>{uppercaseEmail}</Text>
-      <Text style={styles.bio}>D-12 Driver</Text>
+      <Text style={styles.bio}>D-12 Student</Text>
       <Button
         title="Logout"
 
@@ -55,7 +55,7 @@ const DriverMap = ({navigation}) => {
   )
 }
 
-export default DriverMap
+export default StudentProfile
 
 const styles = StyleSheet.create({
   container: {

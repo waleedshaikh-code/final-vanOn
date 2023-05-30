@@ -44,7 +44,7 @@ const StudentLogin = ({ navigation }) => {
     // console.log(email, password);
 
     try {
-      const response = await axios.post("http://192.168.0.114:2000/student", {
+      const response = await axios.post("http://192.168.4.118:2000/student", {
         email,
         password,
       });

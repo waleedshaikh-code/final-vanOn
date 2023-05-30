@@ -47,7 +47,7 @@ import {
           ToastAndroid.show('Please fill all the fields!', ToastAndroid.SHORT);
         }
         else{
-        axios.post("http://192.168.0.114:2000/createDriver", {
+        axios.post("http://10.133.138.68:2000/createDriver", {
           email,
           password,
           name,

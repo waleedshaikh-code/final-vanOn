@@ -85,9 +85,9 @@ const StudentMap = ({ navigation }) => {
               <Text style={styles.text2}>
                 Read a book.Take a nap. Stare out the window
               </Text>
-              <TouchableOpacity onPress={() => navigation.navigate("RequestScreen",{state:0})}>
+              <TouchableOpacity onPress={() => navigation.navigate("StudentProfile",{state:0})}>
                 <View style={styles.button1}>
-                  <Text style={styles.button1Text}>Ride with Van-On</Text>
+                  <Text style={styles.button1Text}>Student Profile</Text>
                 </View>
                 </TouchableOpacity>
             </View>
@@ -109,9 +109,11 @@ const StudentMap = ({ navigation }) => {
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
               <View style={styles.card}>
+              <TouchableOpacity onPress={() => navigation.navigate("RequestScreen",{state:0})}>
                 <View style={styles.view2}>
                   <Image style={styles.image2} source={item.image} />
                 </View>
+                </TouchableOpacity>
                 <View>
                   <Text style={styles.title}>{item.name}</Text>
                 </View>
@@ -119,8 +121,9 @@ const StudentMap = ({ navigation }) => {
             )}
           />
         </View>
+            <TouchableOpacity onPress={() => navigation.navigate("ChatGpt",{state:0})}>
         <View style={styles.view3}>
-          <Text style={styles.text3}> Where to ?</Text>
+          <Text style={styles.text3}>Wanna Study? </Text>
           <View style={styles.view4}>
             <Icon
               type="material-community"
@@ -128,7 +131,7 @@ const StudentMap = ({ navigation }) => {
               color={colors.grey1}
               size={26}
             />
-            <Text style={{ marginLeft: 5 }}>Now</Text>
+            <Text style={{ marginLeft: 5 }}>ChatGPT</Text>
             <Icon
               type="material-community"
               name="chevron-down"
@@ -137,6 +140,7 @@ const StudentMap = ({ navigation }) => {
             />
           </View>
         </View>
+            </TouchableOpacity>
         <View style={styles.view5}>
           <View style={styles.view6}>
             <View style={styles.view7}>

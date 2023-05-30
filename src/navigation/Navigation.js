@@ -15,7 +15,8 @@ import DriverProfile from "../Screens/Driver/DriverProfile";
 import  MaterialCommunityIcons  from "@expo/vector-icons/MaterialCommunityIcons";
 import RequestScreen from "../Screens/Student/RequestScreen";
 import DestinationScreen from "../Screens/Student/DestinationScreen";
-
+import StudentProfile from "../Screens/Student/StudentProfile";
+import ChatGpt from "../Screens/Student/ChatGpt";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -64,6 +65,8 @@ function Navigation() {
         <Stack.Screen name="StudentSignup" component={StudentSignup} />
         <Stack.Screen name="RequestScreen" component={RequestScreen} />
         <Stack.Screen name="DestinationScreen" component={DestinationScreen} />
+        <Stack.Screen name="StudentProfile" component={StudentProfile} />
+        <Stack.Screen name="ChatGpt" component={ChatGpt} />
 
       </Stack.Navigator>
     </NavigationContainer>

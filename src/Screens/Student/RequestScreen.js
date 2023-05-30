@@ -41,7 +41,7 @@ export default function RequestScreen({ navigation,route }) {
 
   const bottomsheet1 = useRef(1);
 
-   const snapPoints1 = useMemo(() => ["70%"], []);
+   const snapPoints1 = useMemo(() => ["30%"], []);
    const handleSheetChange1  = useCallback((index)=>{},[])
 
   //  const handleSheetChange1 = (event)=>{
